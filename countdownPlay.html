@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countdown game</title>
+    <link rel="stylesheet" href="countdownstyle.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <p>
+                The Countdown Numbers Game
+            </p>
+        </div>
+        <div class="logo">
+            <img src="http://i.imgur.com/sYXb2to.png">
+        </div>
+    </header>
+    <form>
+        <div class="mainBody">
+            <div class="video">
+                <video id="clock" width="300px" height="220px">
+                    <source src="CountdownClock.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="exceptVideo">
+                <div class="leftLayout">
+                    <div class="mainLayout">
+                        <div class="targetText">
+                            <input type="text" id="targettxt" value="" readonly>
+                        </div>
+                        <div class="inputNum">
+                            <input type="text" id="n1txt" value="" readonly>
+                            <input type="text" id="n2txt" value="" readonly>
+                            <input type="text" id="n3txt" value="" readonly>
+                            <input type="text" id="n4txt" value="" readonly>
+                            <input type="text" id="n5txt" value="" readonly>
+                            <input type="text" id="n6txt" value="" readonly>
+                        </div>
+                        <!--
+        <div input type = "text" id = "n1txt" value = "" attribute == readonly //only test//
+        <div class="operators">
+
+         
+          <input type="text" id="cleartxt" value="CLEAR" readonly>
+          <input type="text" id="plus" value="+">
+          <input type="text" id="minus" value="-" readonly>
+          <input type="text" id="multiply" value="&times" readonly>
+          <input type="text" id="divide" value="&divide" readonly>
+          <input type="text" id="undotxt" value="UNDO" readonly>
+          
+
+        </div>
+         
+         // if no equation typer
+        -->
+                        <div id="anstxtContainer" contenteditable="false">
+                            <div class="cardsOverlay" id="card-overlay">
+                                <div class="numberCards">
+                                    <input type="button" id="largeNumBtn" value="Large Number">
+                                    <input type="button" id="smallNumBtn" value="Small Number">
+                                </div>
+                                <div class="readyBtnwrapper">
+                                    <input type="button" id="readyBtn" value="Ready?">
+                                </div>
+                            </div>
+                            <input id="anstxt">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <input type="button" id="submitBtn" value="Submit Answer">
+                    </div>
+                </div>
+                <div class="sideLayout">
+                    <div class="stats">
+                        <input type="text" id="pointstxt" value="0p" readonly>
+                        <input type="text" id="bestTimetxt" value="0s" readonly>
+                    </div>
+                    <div class="textareawrapper">
+                        <textarea class="alertClass" id="alertLog" readonly>Displayed above are the points and the fastest time to solve a problem</textarea>
+                    </div>
+                    <div class="bottom">
+                        <div class="sideButtons">
+                            <input type="button" id="showAnswerBtn" value="Show Answer">
+                            <input type="button" id="continueBtn" value="Continue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="htmljs.js"></script>
+<script type="text/javascript" src="countdownSolver.js"></script>
+
+<!--
+file:///Users/srinivasvenkatraman/Desktop/CS IA/
+-->
+
+</html>
